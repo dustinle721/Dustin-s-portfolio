@@ -5,7 +5,75 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--displays the site based on resolution of the device it is being accessed on--> 
 
 <title>Recent posts!</title> <!--Displays this title in the tab-->
-<h1>About the Creator, Dustin Le!</h1>
+<h1>Welcome to my blog site! See what I've been up to whether that is CS related or my free time!</h1></h1>
 
-  <h2>Hey everyone!</h2>
-  <h3>You found my personal GitHub site! This page will (tentatively) show you the stuff I have ever done in my personal and public life!</h3>
+
+  <h3>Posts</h3>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  padding: 20px;
+  background: #f1f1f1;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  font-size: 40px;
+  text-align: center;
+  background: white;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {
+    width: 100%;
+    padding: 0;
+  }
+}
