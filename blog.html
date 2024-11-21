@@ -1,79 +1,137 @@
-<!doctype html> <!--starts HTML code-->
+<!doctype html>
 <html lang="en">
-<head> <!--this contains the machine-readable info for this document; SOURCE: MDN web docs-->
-<meta charset="utf-8"> <!--represents character encoding in modern languages like characters and symbols
-<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--displays the site based on resolution of the device it is being accessed on--> 
 
-<title>Recent posts!</title> <!--Displays this title in the tab-->
-<h1>Welcome to my blog site! See what I've been up to whether that is CS related or my free time!</h1></h1>
+<head>
+    <!-- Metadata and styles -->
+    <meta charset="utf-8"> <!-- Character encoding -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Mobile responsiveness -->
+    <title>Recent Posts!</title> <!-- Displays this title in the browser tab -->
 
+    <!-- CSS -->
+    <style>
+        * {
+            box-sizing: border-box;
+        }
 
-  <h3>Posts</h3>
-* {
-  box-sizing: border-box;
-}
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background: #f1f1f1;
+        }
 
-body {
-  font-family: Arial;
-  padding: 20px;
-  background: #f1f1f1;
-}
+        /* Header/Blog Title */
+        .header {
+            padding: 30px;
+            font-size: 40px;
+            text-align: center;
+            background: white;
+        }
 
-/* Header/Blog Title */
-.header {
-  padding: 30px;
-  font-size: 40px;
-  text-align: center;
-  background: white;
-}
+        /* Create two unequal columns that float next to each other */
+        /* Left column */
+        .leftcolumn {
+            float: left;
+            width: 75%;
+        }
 
-/* Create two unequal columns that floats next to each other */
-/* Left column */
-.leftcolumn {
-  float: left;
-  width: 75%;
-}
+        /* Right column */
+        .rightcolumn {
+            float: left;
+            width: 25%;
+            padding-left: 20px;
+        }
 
-/* Right column */
-.rightcolumn {
-  float: left;
-  width: 25%;
-  padding-left: 20px;
-}
+        /* Fake image */
+        .fakeimg {
+            background-color: #aaa;
+            width: 100%;
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
 
-/* Fake image */
-.fakeimg {
-  background-color: #aaa;
-  width: 100%;
-  padding: 20px;
-}
+        /* Add a card effect for articles */
+        .card {
+            background-color: white;
+            padding: 20px;
+            margin-top: 20px;
+        }
 
-/* Add a card effect for articles */
-.card {
-  background-color: white;
-  padding: 20px;
-  margin-top: 20px;
-}
+        /* Clear floats after the columns */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
 
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
+        /* Footer */
+        .footer {
+            padding: 20px;
+            text-align: center;
+            background: #ddd;
+            margin-top: 20px;
+        }
 
-/* Footer */
-.footer {
-  padding: 20px;
-  text-align: center;
-  background: #ddd;
-  margin-top: 20px;
-}
+        /* Responsive layout - when the screen is less than 800px wide */
+        @media screen and (max-width: 800px) {
+            .leftcolumn,
+            .rightcolumn {
+                width: 100%;
+                padding: 0;
+            }
+        }
+    </style>
+</head>
 
-/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 800px) {
-  .leftcolumn, .rightcolumn {
-    width: 100%;
-    padding: 0;
-  }
-}
+<body>
+    <!-- Header -->
+    <div class="header">
+        <h1>Welcome to my blog site!</h1>
+        <p>See what I've been up to, whether it's CS-related or just fun in my free time!</p>
+    </div>
+
+    <!-- Main content -->
+    <div class="row">
+        <!-- Left column -->
+        <div class="leftcolumn">
+            <div class="card">
+                <h2>Post Title 1</h2>
+                <h5>Post Date, Post Description</h5>
+                <div class="fakeimg">Image Placeholder</div>
+                <p>Some content for the first blog post. This is where your main post content goes!</p>
+            </div>
+            <div class="card">
+                <h2>Post Title 2</h2>
+                <h5>Post Date, Post Description</h5>
+                <div class="fakeimg">Image Placeholder</div>
+                <p>Some content for the second blog post. You can add as many posts as you like here!</p>
+            </div>
+        </div>
+
+        <!-- Right column -->
+        <div class="rightcolumn">
+            <div class="card">
+                <h3>About Me</h3>
+                <div class="fakeimg">Image Placeholder</div>
+                <p>Brief introduction about yourself or your blog.</p>
+            </div>
+            <div class="card">
+                <h3>Popular Posts</h3>
+                <p>Link or description of a popular post.</p>
+                <p>Another popular post link or description.</p>
+            </div>
+            <div class="card">
+                <h3>Follow Me</h3>
+                <p>Social media links or call to action.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <h4>Footer Section</h4>
+        <p>© 2024 Your Blog Name. All rights reserved.</p>
+    </div>
+</body>
+
+</html>
