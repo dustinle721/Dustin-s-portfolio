@@ -4,10 +4,6 @@
 <meta charset="utf-8">  
 <title>Dustin's Portfolio</title> <!--Displays this title in the tab-->
 
-<h1>Hello friends! Welcome to my portfolio page!</h1>
-
-<h2> Please click on any of the buttons below to get to know me a little more!</h2>
-	<h3> This website is still a work in progress, so please excuse any broken links! </h3>
 
 <style type="text/css">
 .heading1 {
@@ -31,6 +27,32 @@
 .coding1 {
 	font-family: 'Cutive Mono', monospace;
 	font-size: medium;
+
+</style>
+<style>
+.container {
+  display: flex;
+  justify-content: center; /* Centers the navigation horizontally */
+  align-items: center;    /* Centers the items vertically (optional) */
+}
+
+.navigation {
+  list-style-type: none; /* Removes bullets */
+  padding: 0;
+  margin: 0;
+  display: flex;         /* Makes the list horizontal */
+  gap: 20px;             /* Adds space between the items */
+}
+
+.navigation li a {
+  text-decoration: none; /* Removes underline from links */
+  color: black;          /* Sets the link color */
+  font-family: 'Roboto', sans-serif;
+  font-size: large;
+}
+
+.navigation li a:hover {
+  color: blue;           /* Changes color on hover (optional) */
 }
 
 
@@ -49,20 +71,25 @@ body {
 
 </style>
 </head>
-<body style="background-color:lightcoral;">
+<body style="background-color:lightred;">
+
+  <p class="heading1">Hey...this is Dustin!</p>
+<hr color="red" width="100%" size=2px>
+<div class="container">
+  <ul class="navigation">
+    <li><a href="aboutme.html">Intro</a></li>
+    <li><a href="contact.html">Contact Me</a></li>
+    <li><a href="blog.html">Blogpost</a></li>
+  </ul>
+</div>
+
+<h2>Hello friends! Welcome to my portfolio page!</h2>
+
+<h2> Please click on any of the buttons below to get to know me a little more!</h2>
+	<h3> This website is still a work in progress, so please excuse any broken links! </h3>
 <p class="heading2">
 	<strong>Hey everyone!:</strong> Welcome to my personal blog. I'm glad you found me. Please click on any of the buttons
   below to navigate the site to get to know me a little more and what I am currently up to!
 </p>
-
-  <p class="heading1">Navigation</p>
-<hr color="blue" width="100%" size=2px>
-<div class="container">
-  <ul class="body1">
-	<li><a href="aboutme.html">Intro</a></li>
-	<li><a href="contact.html">Contact Me</a></li>
-	  	<li><a href="blog.html">Blogpost</a></li>
-	
-</ul>
 
 
