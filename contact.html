@@ -3,14 +3,12 @@
 
 <head>
     <!-- Metadata -->
-    <meta charset="utf-8"> <!-- Character encoding -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Mobile responsiveness -->
-    <title>Contact Me!</title> <!-- Displays this title in the browser tab -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me!</title>
 
     <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Roboto:wght@100..900&display=swap" rel="stylesheet">
 
     <!-- Internal CSS -->
     <style>
@@ -18,15 +16,12 @@
             font-family: 'Montserrat', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #ADD8E6;
+            background-color: #BF8CF7;
             color: #FF0000;
         }
 
-        .header {
-            background-color: #0000FF;
-            color: white;
+        h1, h2 {
             text-align: center;
-            padding: 0px;
         }
 
         .container {
@@ -38,6 +33,26 @@
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
 
+        .navigation {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .navigation li a {
+            text-decoration: none;
+            color: black;
+            font-size: large;
+            font-weight: bold;
+        }
+
+        .navigation li a:hover {
+            color: red;
+        }
+
         a {
             color: #FF0000;
             text-decoration: none;
@@ -45,20 +60,8 @@
         }
 
         a:hover {
+            color: #0000FF;
             text-decoration: underline;
-        }
-
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
-
-        ul li {
-            margin: 10px 0;
-        }
-
-        h1, h2 {
-            text-align: center;
         }
 
         .footer {
@@ -67,29 +70,51 @@
             font-size: 0.9em;
             color: #0000FF;
         }
+
+        @media (max-width: 768px) {
+            .navigation {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .navigation li {
+                margin: 10px 0;
+            }
+        }
     </style>
 </head>
 
 <body>
-    <!-- Header -->
-    <div class="header">
-        <h1>Contact Me!</h1>
-    </div>
+    <!-- Page Title -->
+    <h1>Contact Me!</h1>
+    <hr color="blue" width="100%" size="2px">
 
-    <!-- Main content -->
+    <!-- Navigation Bar -->
+    <div class="container">
+        <ul class="navigation">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="aboutme.html">About</a></li>
+            <li><a href="contact.html">Contact Me</a></li>
+            <li><a href="blog.html">Blogpost</a></li>
+            <li><a href="projects.html">Projects & More</a></li>
+          <li><a href="likesanddislikes.html">Favorites</a></li>
+
+        </ul>
+    </div>
+    <hr color="blue" width="100%" size="2px">
+
+    <!-- Contact Information -->
     <div class="container">
         <h2>Contact me anytime!</h2>
-        <p><a href="https://www.linkedin.com/in/dustinle721" target="_blank">LinkedIn</a></p>
+        <p><a href="https://www.linkedin.com/in/dustinle721" target="_blank" aria-label="Visit my LinkedIn profile">LinkedIn</a></p>
         <p>Email: <a href="mailto:harrison.dustin.le@gmail.com">harrison.dustin.le@gmail.com</a></p>
         <p>Phone: <a href="tel:+19132081429">913-208-1429</a></p>
-
- 
     </div>
 
     <!-- Footer -->
     <div class="footer">
-        <p>© 2025 Dustin's Portfolio. All rights reserved.</p>
-   <ul><a href="index.html">Return to homepage!</a></ul>
+        <p>© 2025 Dustin's Portfolio. All rights reserved.</p><br/>
+ <a href="index.html">Return to homepage!</a></p>
     </div>
 </body>
 
